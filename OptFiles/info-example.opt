@@ -1,0 +1,19 @@
+.opt files are the instructions for the bruteforce optimizer settings.
+After the opt file has been located, the optimizer will run the settings
+from the command line application and output the results returned from
+the application being tested to a csv to be graphed and figure out trends.
+An example file with tokens [FILE] and [ARG] which designate the file and
+argument position when running the respective file is included below. 
+The semi-colon separates the arg token to specify the range being tested
+and the argument position.
+
+[FILE] toOptimize.py; <--- specific file to test
+[ARG] 1: 125-192;  <--- testing position 1 with numbers ranging from 125-195
+
+in order for the optimizer to work, it requires an output to return on 
+command line and should accept inline arguments for the program. you should
+be able to run it like so
+
+    $ python3 toOptimize.py <arg1> <arg2> <arg3> 
+
+with <arg#> replacing an input needed to run the program.
